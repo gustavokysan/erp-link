@@ -1,2 +1,29 @@
 <!doctype html>
-<html lang=""pt-BR""><head><meta charset=""utf-8""><meta name=""viewport"" content=""width=device-width,initial-scale=1""><meta http-equiv=""refresh"" content=""0; url=https://script.google.com/macros/s/AKfycbyE1BgtvTlA6Fke4-Zcr0xNvwLhf4O53S6m9sQFojt1NS7-pXWAVFJTyh7VusrUK3ihwg/exec""><title>ERP Pedidos</title><script>location.replace('https://script.google.com/macros/s/AKfycbyE1BgtvTlA6Fke4-Zcr0xNvwLhf4O53S6m9sQFojt1NS7-pXWAVFJTyh7VusrUK3ihwg/exec');</script><style>body{font:16px Arial,sans-serif;background:#f7f2e8;color:#15211d;display:grid;min-height:100vh;place-items:center;margin:0}.card{background:#fffdf9;border:1px solid #e4ddd1;padding:28px;border-radius:12px;text-align:center;box-shadow:0 12px 35px #594c3120}a{color:#0e5c50;font-weight:bold}</style></head><body><main class=""card""><h1>ERP Pedidos</h1><p>Abrindo o sistema…</p><p><a href=""https://script.google.com/macros/s/AKfycbyE1BgtvTlA6Fke4-Zcr0xNvwLhf4O53S6m9sQFojt1NS7-pXWAVFJTyh7VusrUK3ihwg/exec"">Clique aqui se a abertura não ocorrer.</a></p></main></body></html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>ERP — Pedidos</title>
+    <style>
+      html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #f7f2e8; }
+      #erp { width: 100%; height: 100%; border: 0; display: block; }
+      #loading {
+        position: fixed; inset: 0; display: grid; place-items: center;
+        font: 600 16px Arial, sans-serif; color: #123f36; background: #f7f2e8;
+        z-index: 1;
+      }
+      #loading span { padding: 16px 22px; border-radius: 10px; background: #fffdf9; box-shadow: 0 8px 26px #594c3120; }
+    </style>
+  </head>
+  <body>
+    <div id="loading"><span>Abrindo ERP…</span></div>
+    <iframe id="erp" title="ERP Pedidos" allow="clipboard-read; clipboard-write"
+      src="https://script.google.com/macros/s/AKfycbyE1BgtvTlA6Fke4-Zcr0xNvwLhf4O53S6m9sQFojt1NS7-pXWAVFJTyh7VusrUK3ihwg/exec?embedded=true"></iframe>
+    <script>
+      document.getElementById('erp').addEventListener('load', () => {
+        document.getElementById('loading').remove();
+      });
+    </script>
+  </body>
+</html>
